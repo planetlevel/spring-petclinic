@@ -74,7 +74,6 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.0.4.Final</version>
         </dependency>
-
         <!-- Databases - Uses HSQL by default -->
         <dependency>
             <groupId>org.hsqldb</groupId>
@@ -154,23 +153,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <!-- Verify security and coverage during automated tests. -->
-                    <argLine>
-                        -javaagent:${project.basedir}/jacocoagent.jar=destfile=${project.basedir}/target/jacoco.exec
-                        -javaagent:${project.basedir}/contrast.jar
-                        -Dcontrast.dir=${project.basedir}/working
-                        -Dcontrast.log.daily=true
-                        -Dcontrast.override.appname=spring-petclinic
-                        -Dcontrast.override.appversion=spring-petclinic-${BUILD_NUMBER}
-                        -Dcontrast.server=TEST-882
-                        -Dcontrast.env=qa
-                    </argLine>
-                </configuration>
-            </plugin>
 
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -204,6 +186,27 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <!-- Verify security and coverage during automated tests. -->
+                    <argLine>
+                        -javaagent:${project.basedir}/jacocoagent.jar=destfile=${project.basedir}/target/jacoco.exec
+                        -javaagent:${project.basedir}/contrast.jar
+                        -Dcontrast.dir=${project.basedir}/working
+                        -Dcontrast.log.daily=true
+                        -Dcontrast.server.activity.period=1000
+                        -Dcontrast.reporting.period=1000
+                        -Dcontrast.override.appname=spring-petclinic
+                        -Dcontrast.override.appversion=spring-petclinic-${BUILD_NUMBER}
+                        -Dcontrast.server=TEST-882
+                        -Dcontrast.env=qa
+                    </argLine>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
