@@ -1,6 +1,6 @@
 Vulnerable version of the venerable PetClinic
 
-[![DepShield Badge](https://depshield.sonatype.org/badges/planetlevel/spring-petclinic/depshield.svg)](https://depshield.github.io)
+[![DepShield Badge](https://depshield.sonatype.org/badges/contrast-community/spring-petclinic/depshield.svg)](https://depshield.github.io)
 
 # Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)
 
