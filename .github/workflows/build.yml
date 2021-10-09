@@ -25,5 +25,5 @@ jobs:
       run: mvn -B package -DskipTests --file pom.xml
  
     - name: Run with Contrast
-      run: java -jar target/spring-petclinic.jar
+      run: java -jar target/spring-petclinic-1.5.1.jar
       
