@@ -142,6 +142,13 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
+        
+        <dependency>
+            <groupId>org.kie.modules</groupId>
+            <artifactId>org-apache-commons-lang3</artifactId>
+            <version>6.5.0.Final</version>
+        </dependency>
+        
     </dependencies>
 
     <build>
