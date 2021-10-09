@@ -24,3 +24,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
  
+    - name: Run with Contrast
+      run: java -jar target/spring-petclinic.jar
+      
