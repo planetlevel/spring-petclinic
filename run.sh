@@ -20,21 +20,39 @@ shutdown() {
 
 echo starting DEV server on port 8000
 export JAVA_TOOL_OPTIONS="-javaagent:/opt/contrast/contrast.jar -Dcontrast.config.path=/opt/contrast/contrast.yaml -Dserver.port=8000"
-java -jar target/spring-petclinic-1.5.1.jar > /dev/null &
+java -jar target/spring-petclinic-1.5.1.jar &> /dev/null &
 DEV_PID=$!
-sleep 2
+echo -ne '#####                     (33%)\r'
+sleep 3
+echo -ne '#############             (66%)\r'
+sleep 3
+echo -ne '#######################   (100%)\r'
+echo -ne '\n'
+echo
 
 echo starting TEST server on port 8010
 export JAVA_TOOL_OPTIONS="-javaagent:/opt/contrast/contrast.jar -Dcontrast.config.path=/opt/contrast/contrast_test.yaml -Dserver.port=8010"
-java -jar target/spring-petclinic-1.5.1.jar > /dev/null &
+java -jar target/spring-petclinic-1.5.1.jar &> /dev/null &
 TEST_PID=$!
-sleep 2
+echo -ne '#####                     (33%)\r'
+sleep 3
+echo -ne '#############             (66%)\r'
+sleep 3
+echo -ne '#######################   (100%)\r'
+echo -ne '\n'
+echo
 
 echo starting PROD server on port 8020
 export JAVA_TOOL_OPTIONS="-javaagent:/opt/contrast/contrast.jar -Dcontrast.config.path=/opt/contrast/contrast_protect.yaml -Dserver.port=8020"
-java -jar target/spring-petclinic-1.5.1.jar > /dev/null &
+java -jar target/spring-petclinic-1.5.1.jar &> /dev/null &
 PROD_PID=$!
-sleep 2
+echo -ne '#####                     (33%)\r'
+sleep 3
+echo -ne '#############             (66%)\r'
+sleep 3
+echo -ne '#######################   (100%)\r'
+echo -ne '\n'
+echo
 
 echo "Press [CTRL+C] to stop..."
 while :

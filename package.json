@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/planetlevel/spring-petclinic/issues"
   },
-  "homepage": "https://github.com/planetlevel/spring-petclinic#readme"
+  "homepage": "https://github.com/planetlevel/spring-petclinic#readme",
+  "devDependencies": {
+    "cypress": "^9.1.0"
+  }
 }
