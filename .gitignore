@@ -7,5 +7,13 @@ target/*
 /target
 _site/
 /working/
+/working_protect/
+/working_test/
 /bin/
 /pom.maven
+contrast.yaml
+cypress/videos/
+cypress/screenshots/
+cypress/.DS_Store
+cypress/support/
+cypress/fixtures/
