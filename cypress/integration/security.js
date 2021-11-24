@@ -4,10 +4,10 @@ before(() => {
     cy.wait(5000)
     cy.request( {
         method: 'GET',
-        url: 'https://apptwo.contrastsecurity.com/Contrast/api/ng/d3b189b6-c17d-46e8-b56e-4ba40794630e/applications/c99a0823-4a0c-4817-97a9-22da5355b818?expand=scores,coverage,skip_links',
+        url: Cypress.env('contrast-url') + '/api/ng/' + Cypress.env('contrast-org') + '/applications/' + Cypress.env('contrast-app') + '?expand=scores,coverage,skip_links',
         headers : {
-            'Authorization': 'amVmZi53aWxsaWFtc0Bjb250cmFzdHNlY3VyaXR5LmNvbTpXNjVTMDA1QzRFVTJIN0RG',
-            'Api-Key': 'xXW5dwLccuENQz6f0k48BPVfKmnwya45',
+            'Authorization': Cypress.env('contrast-auth'),
+            'Api-Key': Cypress.env('contrast-api-key'),
             'Content-Type': 'application/json',
         }
     }).then((response) => {

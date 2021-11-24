@@ -2,5 +2,12 @@
   "name": "Using fixtures to represent data",
   "email": "hello@cypress.io",
   "body": "Fixtures are a great way to mock data for responses to routes",
-  "baseUrl": "http://localhost:8000"
+  "baseUrl": "http://localhost:8000",
+  "env": {
+    "contrast-url": "https://apptwo.contrastsecurity.com/Contrast",
+    "contrast-org": "d3b189b6-c17d-46e8-b56e-4ba40794630e",
+    "contrast-app": "c99a0823-4a0c-4817-97a9-22da5355b818",
+    "contrast-auth": "amVmZi53aWxsaWFtc0Bjb250cmFzdHNlY3VyaXR5LmNvbTpXNjVTMDA1QzRFVTJIN0RG",
+    "contrast-api-key": "xXW5dwLccuENQz6f0k48BPVfKmnwya45"
+  }
 }
