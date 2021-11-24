@@ -24,6 +24,15 @@ jobs:
     - name: Build with Maven
       run: mvn -B package -DskipTests --file pom.xml
  
-    - name: Run with Contrast
-      run: java -jar target/spring-petclinic-1.5.1.jar
-      
+    # Run Contrast Scan to analyze securuity of jar    
+    - name: Contrast Scan
+      uses: Contrast-Security-OSS/contrastscan-action@v1
+      with:
+        artifact: spring-petclinic/target/spring-petclinic-1.5.1.jar
+        
+      env:
+        CONTRAST__API__USER_NAME: "<user name>"
+        CONTRAST__API__ORGANIZATION_ID: "6a3073a5-5e68-40e5-9d7d-165340fff15a"
+        CONTRAST__API__SERVICE_KEY: "QP5CWID33DRMKNV7"
+        CONTRAST__API__API_KEY: "IMDq4X0K8BzCvwUt3iEyn0TV4Ti3loMD"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
