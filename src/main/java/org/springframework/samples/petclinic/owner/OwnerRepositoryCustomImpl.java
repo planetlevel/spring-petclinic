@@ -17,7 +17,7 @@ public class OwnerRepositoryCustomImpl implements OwnerRepository {
     private EntityManager entityManager;
     
 	@Override
-	public Collection<Owner> findByLastName(String lastName) {
+	public Collection<Owner> findByLastName(String lastName) throws Exception {
  
 			String sqlQuery = "SELECT DISTINCT owner FROM Owner owner left join fetch owner.pets WHERE owner.lastName = '" + lastName +"'";
         
