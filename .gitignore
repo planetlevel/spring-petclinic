@@ -19,4 +19,3 @@ cypress/support/
 cypress/fixtures/
 node_modules/*
 cypress.json
-cypress.json
