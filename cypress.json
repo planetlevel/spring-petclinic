@@ -1,13 +1,5 @@
 {
-  "name": "Cypress config file",
+  "name": "Using fixtures to represent data",
   "email": "hello@cypress.io",
-  "body": "Set up environment variables",
-  "baseUrl": "http://localhost:8000",
-  "env": {
-    "contrast-url": "https://apptwo.contrastsecurity.com/Contrast",
-    "contrast-org": "<your org id>",
-    "contrast-app": "<your app id>",
-    "contrast-auth": "<your contrast auth token>",
-    "contrast-api-key": "<your contrast API key>"
-  }
+  "body": "Fixtures are a great way to mock data for responses to routes"
 }
