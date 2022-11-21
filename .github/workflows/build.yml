@@ -32,8 +32,8 @@ jobs:
         apiKey: ${{ secrets.CONTRAST_API_KEY }}
         orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
         authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
-        severity: high
-        fail: true
+        severity: low
+        fail: false
         
     # Upload vulnerabilities into GitHub Security Tab of the repo
     - name: Upload SARIF file
@@ -49,6 +49,6 @@ jobs:
         orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
         authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
         filePath: mypath/to/config/files
-        severity: medium
-        fail: true
+        severity: low
+        fail: false
 
