@@ -29,7 +29,7 @@ jobs:
       uses: Contrast-Security-OSS/contrastscan-action@v1
       with:
         artifact: "/home/runner/work/spring-petclinic/spring-petclinic/target/spring-petclinic-1.5.1.jar"
-        api_url: "https://apptwo.contrastsecurity.com/Contrast"     
+        apiUrl: "https://apptwo.contrastsecurity.com/Contrast"     
       env:
         CONTRAST__API__USER_NAME: "jeff.williams@contrastsecurity.com"
         CONTRAST__API__ORGANIZATION_ID: ${{ secrets.CONTRAST__API__ORGANIZATION_ID }}
