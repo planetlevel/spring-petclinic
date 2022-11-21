@@ -1,4 +1,4 @@
-name: Maven Build + Contrast Scan
+name: Maven Build + Contrast CodeSec
 
 on:
  push:
@@ -26,27 +26,32 @@ jobs:
  
     # Run Contrast Scan to analyze security of jar    
     - name: Contrast Scan Action
+      if: always()
       uses: Contrast-Security-OSS/contrastscan-action@v2.0.3
       with:
         artifact: /home/runner/work/spring-petclinic/spring-petclinic/target/spring-petclinic-1.5.1.jar
         apiKey: ${{ secrets.CONTRAST_API_KEY }}
         orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
         authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
-        fail: false
+        severity: medium
+        fail: true
         
     # Upload vulnerabilities into GitHub Security Tab of the repo
     - name: Upload SARIF file
+      if: always()
       uses: github/codeql-action/upload-sarif@v2
       with:
         sarif_file: results.sarif
     
     # Run Contrast SCA to analyze security open source libraries
     - name: Contrast SCA Action
+      if: always()
       uses: Contrast-Security-OSS/contrast-sca-action@v1
       with:
         apiKey: ${{ secrets.CONTRAST_API_KEY }}
         orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
         authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
         filePath: pom.xml
-        fail: false
+        severity: medium
+        fail: true
 
