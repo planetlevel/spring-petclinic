@@ -24,15 +24,31 @@ jobs:
     - name: Build with Maven
       run: mvn -B package -DskipTests --file pom.xml
  
-    # Run Contrast Scan to analyze securuity of jar    
-    - name: Contrast Scan
-      uses: Contrast-Security-OSS/contrastscan-action@v1
+    # Run Contrast Scan to analyze security of jar    
+    - name: Contrast Scan Action
+      uses: Contrast-Security-OSS/contrastscan-action@v2.0.3
       with:
-        artifact: "/home/runner/work/spring-petclinic/spring-petclinic/target/spring-petclinic-1.5.1.jar"
-        apiUrl: "https://apptwo.contrastsecurity.com/Contrast"     
-      env:
-        CONTRAST__API__USER_NAME: "jeff.williams@contrastsecurity.com"
-        CONTRAST__API__ORGANIZATION_ID: ${{ secrets.CONTRAST__API__ORGANIZATION_ID }}
-        CONTRAST__API__SERVICE_KEY: ${{ secrets.CONTRAST__API__SERVICE_KEY }}
-        CONTRAST__API__API_KEY: ${{ secrets.CONTRAST__API__API_KEY }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        artifact: /home/runner/work/spring-petclinic/spring-petclinic/target/spring-petclinic-1.5.1.jar
+        apiKey: ${{ secrets.CONTRAST_API_KEY }}
+        orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
+        authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
+        severity: high
+        fail: true
+        
+    # Upload vulnerabilities into GitHub Security Tab of the repo
+    - name: Upload SARIF file
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: results.sarif
+    
+    # Run Contrast SCA to analyze security open source libraries
+    - name: Contrast SCA Action
+      uses: Contrast-Security-OSS/contrast-sca-action@v1
+      with:
+        apiKey: ${{ secrets.CONTRAST_API_KEY }}
+        orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
+        authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
+        filePath: mypath/to/config/files
+        severity: medium
+        fail: true
+
