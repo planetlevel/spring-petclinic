@@ -1,4 +1,4 @@
-name: Maven CI/CD 
+name: Maven Build + Contrast Scan
 
 on:
  push:
