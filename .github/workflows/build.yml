@@ -32,7 +32,6 @@ jobs:
         apiKey: ${{ secrets.CONTRAST_API_KEY }}
         orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
         authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
-        severity: low
         fail: false
         
     # Upload vulnerabilities into GitHub Security Tab of the repo
@@ -49,6 +48,5 @@ jobs:
         orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
         authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
         filePath: mypath/to/config/files
-        severity: low
         fail: false
 
