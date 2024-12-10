@@ -24,7 +24,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package -DskipTests --file pom.xml
 
-    - uses: AppThreat/dep-scan-action@latest
+    - uses: AppThreat/dep-scan-action@master
       with:
         src: /github/workspace
         report_file: /github/workspace/reports/depscan.json
@@ -51,7 +51,7 @@ jobs:
     # Run Contrast SCA to analyze security open source libraries
     - name: Contrast SCA Action
       if: always()
-      uses: Contrast-Security-OSS/contrast-sca-action@v1
+      uses: Contrast-Security-OSS/contrast-sca-action@main
       with:
         apiKey: ${{ secrets.CONTRAST_API_KEY }}
         orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
@@ -64,7 +64,7 @@ jobs:
     # Run Contrast Scan to analyze security of project code    
     - name: Contrast Scan Action
       if: always()
-      uses: Contrast-Security-OSS/contrastscan-action@v2.0.3
+      uses: Contrast-Security-OSS/contrastscan-action@main
       with:
         artifact: /home/runner/work/spring-petclinic/spring-petclinic/target/spring-petclinic-1.5.1.jar
         apiKey: ${{ secrets.CONTRAST_API_KEY }}
