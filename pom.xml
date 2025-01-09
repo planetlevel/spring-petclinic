@@ -29,7 +29,7 @@
         <thymeleaf.version>3.0.6.RELEASE</thymeleaf.version>
 
         <cobertura.version>2.7</cobertura.version>
-
+        <versions.java-security-toolkit>1.2.1</versions.java-security-toolkit>
     </properties>
 
     <dependencies>
@@ -149,6 +149,10 @@
             <version>3.12.0</version>
         </dependency>
         
+        <dependency>
+            <groupId>io.github.pixee</groupId>
+            <artifactId>java-security-toolkit</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -304,5 +308,13 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.pixee</groupId>
+                <artifactId>java-security-toolkit</artifactId>
+                <version>${versions.java-security-toolkit}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

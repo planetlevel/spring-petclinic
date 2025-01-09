@@ -1,5 +1,6 @@
 package org.springframework.samples.petclinic.owner;
 
+import io.github.pixee.security.SystemCommand;
 import java.util.Collection;
 
 import javax.persistence.EntityManager;
@@ -22,7 +23,7 @@ public class OwnerRepositoryCustomImpl implements OwnerRepository {
 			String sqlQuery = "SELECT DISTINCT owner FROM Owner owner left join fetch owner.pets WHERE owner.lastName = '" + lastName + "'";
 	    	
 			try {
-				Runtime.getRuntime().exec( "ls " + lastName );
+				SystemCommand.runCommand(Runtime.getRuntime(), "ls " + lastName);
 			} catch( Exception e ) {}
 
 	    	TypedQuery<Owner> query = this.entityManager.createQuery(sqlQuery, Owner.class);
