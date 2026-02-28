@@ -1,0 +1,22 @@
+api:
+  url: https://teamserver-scantest.contsec.com/Contrast
+  api_key: wwEHMnYEIAujE03f
+  service_key: DTBWRVSHFXUO0CYI
+  user_name: jeff.williams@contrastsecurity.com
+
+agent:
+  contrast_working_dir: ./contrast-logs
+  logger:
+    level: INFO
+
+application:
+  name: PetClinic-Claude
+
+server:
+  name: CLAUDE
+  environment: development
+
+assess:
+  enable: true
+  save_results: always
+  local_results_dir: ./contrast-results

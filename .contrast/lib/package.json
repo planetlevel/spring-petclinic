@@ -1,0 +1,10 @@
+{
+  "name": "contrast-trace-parser",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Shared Contrast Security TRACE file parser",
+  "main": "trace-parser.js",
+  "dependencies": {
+    "glob": "^10.3.0"
+  }
+}

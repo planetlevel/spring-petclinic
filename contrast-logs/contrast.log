@@ -1,0 +1,105 @@
+2026-02-27 23:17:30,803 [main f] INFO - Starting Contrast!
+2026-02-27 23:17:30,804 [main f] INFO - com.contrastsecurity.thirdparty.oa4j.logging.log4j.LogManager initialized
+2026-02-27 23:17:30,805 [main f] INFO - com.contrastsecurity.thirdparty.os4j.LoggerFactory initialized
+2026-02-27 23:17:30,807 [main f] INFO - com.contrastsecurity.thirdparty.oa4j.commons.logging.LogFactory initialized
+2026-02-27 23:17:30,904 [main k] INFO - com.contrastsecurity.thirdparty.imm.core.util.internal.logging.InternalLoggerFactory initialized
+2026-02-27 23:17:30,980 [main j] INFO - Using for stack capture factory Default/Naive
+2026-02-27 23:17:31,021 [main m] INFO - Available processors: 10.0
+2026-02-27 23:17:31,021 [main m] INFO - Effective processors: unknown
+2026-02-27 23:17:31,021 [main g] INFO - Reporting to https://teamserver-scantest.contsec.com/Contrast
+2026-02-27 23:17:31,021 [main g] INFO - Reporting as user jeff.williams@contrastsecurity.com
+2026-02-27 23:17:31,021 [main r] INFO - Copyright: 2025 Contrast Security, Inc
+2026-02-27 23:17:31,021 [main r] INFO - Contact: support@contrastsecurity.com
+2026-02-27 23:17:31,021 [main r] INFO - License: Commercial
+2026-02-27 23:17:31,021 [main r] INFO - NOTICE: This Software and the patented inventions embodied within may only be used as part of
+2026-02-27 23:17:31,021 [main r] INFO - Contrast Security's commercial offerings. Even though it is made available through public
+2026-02-27 23:17:31,021 [main r] INFO - repositories, use of this Software is subject to the applicable End User Licensing Agreement
+2026-02-27 23:17:31,021 [main r] INFO - found at https://www.contrastsecurity.com/enduser-terms-0317a or as otherwise agreed between
+2026-02-27 23:17:31,021 [main r] INFO - Contrast Security and the End User. The Software may not be reverse engineered, modified,
+2026-02-27 23:17:31,021 [main r] INFO - repackaged, sold, redistributed or otherwise used in a way not consistent with the End User
+2026-02-27 23:17:31,021 [main r] INFO - License Agreement.
+2026-02-27 23:17:31,022 [main r] INFO - The Contrast Java agent collects usage data in order to help us improve compatibility and security coverage.
+2026-02-27 23:17:31,022 [main r] INFO - The data is anonymous and does not contain application data. It is collected by Contrast and is never shared.
+2026-02-27 23:17:31,022 [main r] INFO - You can opt-out of telemetry by setting the CONTRAST_AGENT_TELEMETRY_OPTOUT environment variable to 'true' or '1'
+2026-02-27 23:17:31,022 [main r] INFO - Read more about Contrast Java agent telemetry: https://docs.contrastsecurity.com/en/java-telemetry.html
+2026-02-27 23:17:31,022 [main r] INFO - Agent Version:    6.19.0
+2026-02-27 23:17:31,022 [main r] INFO - Agent Build Time: 20250624.1804
+2026-02-27 23:17:31,022 [main r] INFO - Processors:       10
+2026-02-27 23:17:31,022 [main r] INFO - Free Memory:      1037878136
+2026-02-27 23:17:31,022 [main r] INFO - Total Memory:     1073741824
+2026-02-27 23:17:31,022 [main r] INFO - Java Version:     Eclipse Adoptium :: 11.0.27
+2026-02-27 23:17:31,022 [main r] INFO -   gopherProxySet	false
+2026-02-27 23:17:31,022 [main r] INFO -   awt.toolkit	sun.lwawt.macosx.LWCToolkit
+2026-02-27 23:17:31,022 [main r] INFO -   java.specification.version	11
+2026-02-27 23:17:31,022 [main r] INFO -   sun.cpu.isalist	
+2026-02-27 23:17:31,022 [main r] INFO -   sun.jnu.encoding	UTF-8
+2026-02-27 23:17:31,022 [main r] INFO -   java.class.path	target/spring-petclinic-1.5.1.jar
+2026-02-27 23:17:31,022 [main r] INFO -   java.vm.vendor	Eclipse Adoptium
+2026-02-27 23:17:31,022 [main r] INFO -   sun.arch.data.model	64
+2026-02-27 23:17:31,022 [main r] INFO -   java.vendor.url	https://adoptium.net/
+2026-02-27 23:17:31,022 [main r] INFO -   user.timezone	America/New_York
+2026-02-27 23:17:31,022 [main r] INFO -   os.name	Mac OS X
+2026-02-27 23:17:31,023 [main r] INFO -   java.vm.specification.version	11
+2026-02-27 23:17:31,023 [main r] INFO -   contrast.config.path	./contrast_security.yaml
+2026-02-27 23:17:31,023 [main r] INFO -   sun.java.launcher	SUN_STANDARD
+2026-02-27 23:17:31,023 [main r] INFO -   user.country	US
+2026-02-27 23:17:31,023 [main r] INFO -   sun.boot.library.path	/Users/jeffwilliams/.sdkman/candidates/java/11.0.27-tem/lib
+2026-02-27 23:17:31,023 [main r] INFO -   sun.java.command	target/spring-petclinic-1.5.1.jar
+2026-02-27 23:17:31,023 [main r] INFO -   http.nonProxyHosts	local|*.local|169.254/16|*.169.254/16
+2026-02-27 23:17:31,023 [main r] INFO -   jdk.debug	release
+2026-02-27 23:17:31,023 [main r] INFO -   sun.cpu.endian	little
+2026-02-27 23:17:31,023 [main r] INFO -   user.home	/Users/jeffwilliams
+2026-02-27 23:17:31,023 [main r] INFO -   user.language	en
+2026-02-27 23:17:31,023 [main r] INFO -   java.specification.vendor	Oracle Corporation
+2026-02-27 23:17:31,023 [main r] INFO -   java.version.date	2025-04-15
+2026-02-27 23:17:31,023 [main r] INFO -   java.home	/Users/jeffwilliams/.sdkman/candidates/java/11.0.27-tem
+2026-02-27 23:17:31,023 [main r] INFO -   file.separator	/
+2026-02-27 23:17:31,023 [main r] INFO -   java.vm.compressedOopsMode	Zero based
+2026-02-27 23:17:31,023 [main r] INFO -   line.separator	
+
+2026-02-27 23:17:31,023 [main r] INFO -   java.specification.name	Java Platform API Specification
+2026-02-27 23:17:31,023 [main r] INFO -   java.vm.specification.vendor	Oracle Corporation
+2026-02-27 23:17:31,023 [main r] INFO -   java.awt.graphicsenv	sun.awt.CGraphicsEnvironment
+2026-02-27 23:17:31,023 [main r] INFO -   sun.management.compiler	HotSpot 64-Bit Tiered Compilers
+2026-02-27 23:17:31,023 [main r] INFO -   ftp.nonProxyHosts	local|*.local|169.254/16|*.169.254/16
+2026-02-27 23:17:31,023 [main r] INFO -   java.runtime.version	11.0.27+6
+2026-02-27 23:17:31,023 [main r] INFO -   user.name	jeffwilliams
+2026-02-27 23:17:31,023 [main r] INFO -   path.separator	:
+2026-02-27 23:17:31,023 [main r] INFO -   os.version	15.7.4
+2026-02-27 23:17:31,023 [main r] INFO -   java.runtime.name	OpenJDK Runtime Environment
+2026-02-27 23:17:31,023 [main r] INFO -   file.encoding	UTF-8
+2026-02-27 23:17:31,023 [main r] INFO -   java.vm.name	OpenJDK 64-Bit Server VM
+2026-02-27 23:17:31,023 [main r] INFO -   java.vendor.version	Temurin-11.0.27+6
+2026-02-27 23:17:31,023 [main r] INFO -   java.vendor.url.bug	https://github.com/adoptium/adoptium-support/issues
+2026-02-27 23:17:31,023 [main r] INFO -   java.io.tmpdir	/var/folders/00/pbjls4kn4ld75qqw6ff33x8w0000gn/T/
+2026-02-27 23:17:31,023 [main r] INFO -   java.version	11.0.27
+2026-02-27 23:17:31,023 [main r] INFO -   user.dir	/Users/jeffwilliams/git/claude-integration/test/petclinic-test
+2026-02-27 23:17:31,023 [main r] INFO -   os.arch	aarch64
+2026-02-27 23:17:31,023 [main r] INFO -   java.vm.specification.name	Java Virtual Machine Specification
+2026-02-27 23:17:31,023 [main r] INFO -   java.awt.printerjob	sun.lwawt.macosx.CPrinterJob
+2026-02-27 23:17:31,023 [main r] INFO -   com.contrastsecurity.thirdparty.oa4j.commons.logging.LogFactory	com.contrastsecurity.agent.logging.log4j2.b
+2026-02-27 23:17:31,023 [main r] INFO -   sun.os.patch.level	unknown
+2026-02-27 23:17:31,023 [main r] INFO -   java.library.path	/Users/jeffwilliams/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2026-02-27 23:17:31,023 [main r] INFO -   java.vm.info	mixed mode
+2026-02-27 23:17:31,023 [main r] INFO -   java.vendor	Eclipse Adoptium
+2026-02-27 23:17:31,023 [main r] INFO -   java.vm.version	11.0.27+6
+2026-02-27 23:17:31,023 [main r] INFO -   java.specification.maintenance.version	3
+2026-02-27 23:17:31,023 [main r] INFO -   sun.io.unicode.encoding	UnicodeBig
+2026-02-27 23:17:31,023 [main r] INFO -   java.class.version	55.0
+2026-02-27 23:17:31,023 [main r] INFO -   socksNonProxyHosts	local|*.local|169.254/16|*.169.254/16
+2026-02-27 23:17:31,832 [main p] INFO - Detected Team Server Version: 20260224202523.20260224-2021.0d9844d172
+2026-02-27 23:17:31,835 [main b] INFO - Found instructions from TeamServer: Assess=on, Protect=on, Observe=off
+2026-02-27 23:17:31,897 [main l] INFO - current configuration - {"application.name":"PetClinic-Claude","api.url":"https://teamserver-scantest.contsec.com/Contrast","agent.contrast_working_dir":"./contrast-logs","assess.enable":true,"assess.save_results":"always","assess.local_results_dir":"./contrast-results","server.name":"CLAUDE","agent.security_logger.path":"/Users/jeffwilliams/git/claude-integration/test/petclinic-test/./contrast-logs/security.log","agent.logger.path":"/Users/jeffwilliams/git/claude-integration/test/petclinic-test/./contrast-logs/contrast.log","protect.enable":true,"agent.java.reporting.enable_combined_server_app_startup":true,"agent.reporting.route_coverage.observation.middleware":true,"api.user_name":"jeff.williams@contrastsecurity.com","api.api_key":"contrast-log-redacted","api.service_key":"contrast-log-redacted","agent.silent_telemetry.enable":true}
+2026-02-27 23:17:31,898 [main i] INFO - Using pre-packaged policy from engine
+2026-02-27 23:17:32,038 [main ContrastPolicy] INFO - Applying rule customizations...
+2026-02-27 23:17:32,038 [main ContrastPolicy] INFO - Done applying rule customizations...
+2026-02-27 23:17:32,281 [main ProtectManager] INFO - No log enhancers provided
+2026-02-27 23:17:32,309 [main RoutePlugin] INFO - Route coverage is enabled because agent.route_coverage.enable is true and assess.enable is true
+2026-02-27 23:17:57,775 [main ContrastEngine] INFO - Installing Contrast plugins...
+2026-02-27 23:17:57,786 [main s] INFO - Starting background application updating threads...
+2026-02-27 23:17:57,788 [main g] INFO - Starting reporting thread...
+2026-02-27 23:17:57,789 [main e] INFO - TeamServer application settings scheduled with interval 30000 ms
+2026-02-27 23:17:57,790 [main c] INFO - Starting trace purging thread...
+2026-02-27 23:17:57,810 [main ContrastEngine] INFO - Beginning application...
+2026-02-27 23:17:57,811 [main ContrastEngine] INFO - Contrast engine started.
+2026-02-27 23:18:08,030 [Contrast Application Updater b] INFO - Successfully created app on the Contrast Server (response code 200): Application{classLoader='jdk.internal.loader.ClassLoaders$AppClassLoader@16f65612', key='/', name='PetClinic-Claude', resolvedFilePath='', contextPath='/', applicationState=READY_FOR_CREATION'}.

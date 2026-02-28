@@ -19,3 +19,8 @@ cypress/support/
 cypress/fixtures/
 node_modules/*
 cypress.json
+
+# Contrast Security
+contrast-results/
+contrast.jar
+.contrast-seen
